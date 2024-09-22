@@ -2,7 +2,14 @@
 // Used in `components/ContentWrapper`
 
 @use 'sass:math';
-
+@keyframes edit-post__fade-in-animation {
+  from {
+	opacity: 0;
+  }
+}
+@mixin edit-post__fade-in-animation() {
+  animation: edit-post__fade-in-animation 0.2s ease-out 0s;
+}
 @import '@wordpress/base-styles/mixins';
 @import '@wordpress/base-styles/colors.native';
 @import '@wordpress/base-styles/z-index';
@@ -12,3 +19,4 @@
 @import '@wordpress/base-styles/breakpoints';
 @import '@wordpress/block-library/src/style';
 @import '@wordpress/block-library/src/theme';
+@import '@wordpress/block-editor/src/style';
