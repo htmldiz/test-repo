@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "faust dev",
     "build": "faust build",
+    "blockset": "faust blockset",
     "generate": "faust generatePossibleTypes",
     "stylesheet": "faust generateGlobalStylesheet",
     "start": "faust start"
@@ -25,5 +26,9 @@
   "engines": {
     "node": ">=16",
     "npm": ">=8"
+  },
+  "devDependencies": {
+    "@faustwp/block-editor-utils": "^0.3.0",
+    "@wordpress/scripts": "^30.0.2"
   }
 }
